@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="shortcut icon" href="ico.png" type="image/x-icon">
+    <title>Katharsis - Tu Kit Emocional de Emergencia</title>
+</head>
+<body>
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav" id="mobileNav">
+        <span class="close-mobile" onclick="toggleMobileMenu()">&times;</span>
+        <ul>
+            <li><a onclick="showPage('inicio'); toggleMobileMenu()">Inicio</a></li>
+            <li><a onclick="showPage('proyecto'); toggleMobileMenu()">El Proyecto</a></li>
+            <li><a onclick="showPage('metodologia'); toggleMobileMenu()">Metodología</a></li>
+            <li><a onclick="showPage('resultados'); toggleMobileMenu()">Resultados</a></li>
+            <li><a onclick="showPage('equipo'); toggleMobileMenu()">Equipo</a></li>
+            <li><a onclick="showPage('contacto'); toggleMobileMenu()">Contacto</a></li>
+        </ul>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <nav class="container">
+            <div class="logo" onclick="showPage('inicio')">Katharsis</div>
+            <ul class="nav-links">
+                <li><a onclick="showPage('inicio')">Inicio</a></li>
+                <li><a onclick="showPage('proyecto')">El Proyecto</a></li>
+                <li><a onclick="showPage('metodologia')">Metodología</a></li>
+                <li><a onclick="showPage('resultados')">Resultados</a></li>
+                <li><a onclick="showPage('equipo')">Equipo</a></li>
+                <li><a onclick="showPage('contacto')">Contacto</a></li>
+            </ul>
+            <div class="mobile-menu" onclick="toggleMobileMenu()">☰</div>
+        </nav>
+    </header>
+
+    <!-- Página de Inicio -->
+    <div id="inicio" class="page-section active">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content fade-in">
+                    <h1>Katharsis</h1>
+                    <p class="subtitle">Tu Kit Emocional de Emergencia</p>
+                    <p style="font-size: 1.1rem; margin-bottom: 2rem; color: var(--verde-oscuro);">
+                        El juego de mesa que transforma la gestión emocional en una experiencia accesible, empática y creativa
+                    </p>
+                    <button class="cta-button" onclick="showPage('proyecto')">Descubre Más</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="content-section">
+            <div class="container">
+                <h2 class="section-title fade-in">¿Por qué elegir Katharsis?</h2>
+                <div class="features-grid">
+                    <div class="feature-card fade-in">
+                        <div class="feature-icon">🧠</div>
+                        <h3>Gestión Emocional</h3>
+                        <p>Desarrolla habilidades para identificar, comprender y manejar emociones de manera saludable a través de dinámicas interactivas.</p>
+                    </div>
+                    <div class="feature-card fade-in">
+                        <div class="feature-icon">👥</div>
+                        <h3>Experiencia Cooperativa</h3>
+                        <p>Fomenta la empatía y el apoyo mutuo. Sin competencia, solo crecimiento conjunto y comprensión emocional.</p>
+                    </div>
+                    <div class="feature-card fade-in">
+                        <div class="feature-icon">⚡</div>
+                        <h3>Dinámicas Rápidas</h3>
+                        <p>Mini-retos de 30 segundos perfectos para pausas entre clases, momentos de estrés o sesiones de relajación grupal.</p>
+                    </div>
+                    <div class="feature-card fade-in">
+                        <div class="feature-icon">🌱</div>
+                        <h3>Adaptable y Versátil</h3>
+                        <p>Disponible en formato físico y digital, con expansiones temáticas para ansiedad, autoestima, exámenes y más.</p>
+                    </div>
+                    <div class="feature-card fade-in">
+                        <div class="feature-icon">🎨</div>
+                        <h3>Creatividad Terapéutica</h3>
+                        <p>Combina respiración, visualización, escritura creativa y movimiento para una experiencia integral de bienestar.</p>
+                    </div>
+                    <div class="feature-card fade-in">
+                        <div class="feature-icon">🌍</div>
+                        <h3>Inclusivo y Accesible</h3>
+                        <p>Diseñado con lenguaje inclusivo y disponible en múltiples idiomas para llegar a más personas.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Section -->
+        <section class="content-section">
+            <div class="container">
+                <h2 class="section-title fade-in">Impacto Real</h2>
+                <div class="stats-grid">
+                    <div class="stat-card fade-in">
+                        <span class="stat-number">80%</span>
+                        <span class="stat-label">Estudiantes reportan mayor relajación</span>
+                    </div>
+                    <div class="stat-card fade-in">
+                        <span class="stat-number">3+</span>
+                        <span class="stat-label">Contextos de aplicación validados</span>
+                    </div>
+                    <div class="stat-card fade-in">
+                        <span class="stat-number">30</span>
+                        <span class="stat-label">Segundos por dinámica</span>
+                    </div>
+                    <div class="stat-card fade-in">
+                        <span class="stat-number">100%</span>
+                        <span class="stat-label">Enfoque cooperativo</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Página del Proyecto -->
+    <div id="proyecto" class="page-section">
+        <section class="content-section" style="padding-top: 120px;">
+            <div class="container">
+                <h1 class="section-title fade-in">El Proyecto Katharsis</h1>
+                <p class="section-subtitle fade-in">Juego de Cartas para la Conciencia y el Bienestar Mental</p>
+                
+                <div class="two-column">
+                    <div class="content-text fade-in">
+                        <h3>🎯 Objetivos</h3>
+                        <p>Nuestro objetivo principal es desarrollar un juego de cartas de mesa que contribuya al bienestar mental de los estudiantes universitarios, ofreciendo un espacio lúdico y reflexivo para reducir el estrés académico.</p>
+                        <p>Buscamos promover el diálogo, la relajación y la empatía entre compañeros, usando herramientas del pensamiento creativo y emocional.</p>
+                        
+                        <h3>🎯 Alcance</h3>
+                        <p>Este proyecto está dirigido principalmente a jóvenes universitarios, pero puede adaptarse para niveles educativos superiores o medios. Se enfoca en el bienestar mental y emocional, sin requerir tecnología o materiales costosos.</p>
+                    </div>
+                    <div class="info-grid fade-in" style="grid-template-columns: 1fr;">
+                        <div class="info-card">
+                            <h3>📚 Marco Teórico</h3>
+                            <ul>
+                                <li>Estudios de psicología educativa</li>
+                                <li>Relación estrés académico - bajo rendimiento</li>
+                                <li>Técnicas de manejo de ansiedad</li>
+                            </ul>
+                        </div>
+                        <div class="info-card">
+                            <h3>🧩 Marco Conceptual</h3>
+                            <ul>
+                                <li>Principios del Design Thinking</li>
+                                <li>Gamificación aplicada a salud mental</li>
+                                <li>Técnicas de relajación grupal</li>
+                                <li>Dinámicas grupales terapéuticas</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="container">
+                <h2 class="section-title fade-in">Análisis Situacional</h2>
+                <div class="info-grid">
+                    <div class="info-card fade-in">
+                        <h3>🚨 Situación Actual</h3>
+                        <p>Los estudiantes enfrentan altos niveles de estrés y presión académica, lo que impacta negativamente su salud mental y rendimiento académico.</p>
+                    </div>
+                    <div class="info-card fade-in">
+                        <h3>⚠️ Riesgos Identificados</h3>
+                        <ul>
+                            <li>Falta de participación estudiantil</li>
+                            <li>Desinterés por falta de comprensión del propósito</li>
+                            <li>Resistencia inicial a actividades de bienestar</li>
+                        </ul>
+                    </div>
+                    <div class="info-card fade-in">
+                        <h3>✅ Ventajas Clave</h3>
+                        <ul>
+                            <li>Promueve la convivencia sana</li>
+                            <li>Es accesible y económico</li>
+                            <li>Fácil de replicar en diferentes contextos</li>
+                            <li>No requiere tecnología especializada</li>
+                        </ul>
+                    </div>
+                    <div class="info-card fade-in">
+                        <h3>🔄 Alternativas Consideradas</h3>
+                        <ul>
+                            <li>Diario de emociones individual</li>
+                            <li>Aplicación móvil</li>
+                            <li>Charlas o talleres tradicionales</li>
+                            <li>Sesiones de terapia grupal formal</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="container">
+                <h2 class="section-title fade-in">Beneficios Esperados</h2>
+                <div class="features-grid">
+                    <div class="feature-card fade-in">
+                        <div class="feature-icon">🧘‍♀️</div>
+                        <h3>Mejora del Bienestar Mental</h3>
+                        <p>Reducción significativa del estrés y ansiedad académica a través de técnicas de relajación y mindfulness.</p>
+                    </div>
+                    <div class="feature-card fade-in">
+                        <div class="feature-icon">📚</div>
+                        <h3>Reducción del Estrés Académico</h3>
+                        <p>Herramientas prácticas para manejar la presión de exámenes, entregas y responsabilidades universitarias.</p>
+                    </div>
+                    <div class="feature-card fade-in">
+                        <div class="feature-icon">🤝</div>
+                        <h3>Mejora de Relaciones Sociales</h3>
+                        <p>Fortalecimiento de vínculos entre compañeros y desarrollo de habilidades de empatía y comunicación.</p>
+                    </div>
+                    <div class="feature-card fade-in">
+                        <div class="feature-icon">💚</div>
+                        <h3>Conciencia del Autocuidado</h3>
+                        <p>Desarrollo de hábitos saludables y reconocimiento de la importancia del bienestar emocional.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Página de Metodología -->
+    <div id="metodologia" class="page-section">
+        <section class="content-section" style="padding-top: 120px;">
+            <div class="container">
+                <h1 class="section-title fade-in">Metodología de Desarrollo</h1>
+                <p class="section-subtitle fade-in">Proceso basado en Design Thinking y Método SCAMPER</p>
+                
+                <div class="two-column">
+                    <div class="content-text fade-in">
+                        <h3>🎨 Design Thinking Process</h3>
+                        <p>Aplicamos el modelo de Design Thinking como metodología principal para el desarrollo de Katharsis, asegurando que el producto final responda a necesidades reales de los usuarios.</p>
+                        <p>Este enfoque centrado en el usuario nos permitió crear una solución empática, funcional y con impacto real en el bienestar estudiantil.</p>
+                    </div>
+                    <div class="fade-in">
+                        <div class="info-card">
+                            <h3>🔄 Método SCAMPER</h3>
+                            <p>Utilizamos el método SCAMPER para explorar a fondo las posibilidades de innovación y optimización del juego:</p>
+                            <ul>
+                                <li><strong>Sustituir:</strong> Formatos, materiales y reglas</li>
+                                <li><strong>Combinar:</strong> Dinámicas y propósitos</li>
+                                <li><strong>Adaptar:</strong> Contextos y metodologías</li>
+                                <li><strong>Modificar:</strong> Contenido y experiencia</li>
+                                <li><strong>Otros usos:</strong> Aplicaciones terapéuticas</li>
+                                <li><strong>Eliminar:</strong> Elementos innecesarios</li>
+                                <li><strong>Reorganizar:</strong> Estructura y progresión</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="container">
+                <h2 class="section-title fade-in">Fases del Design Thinking</h2>
+                <div class="features-grid">
+                    <div class="feature-card fade-in">
+                        <div class="feature-icon">❤️</div>
+                        <h3>1. Empatizar</h3>
+                        <p>Identificamos cómo el estrés afecta a los estudiantes universitarios a través de observación, entrevistas y análisis de comportamientos.</p>
+                    </div>
+                    <div class="feature-card fade-in">
+                        <div class="feature-icon">🎯</div>
+                        <h3>2. Definir</h3>
+                        <p>Elegimos abordar el problema del estrés académico con un juego cooperativo que promueva el bienestar mental de forma accesible.</p>
+                    </div>
+                    <div class="feature-card fade-in">
+                        <div class="feature-icon">💡</div>
+                        <h3>3. Idear</h3>
+                        <p>Generamos múltiples propuestas usando técnicas creativas como lluvia de ideas, mapas mentales y sesiones colaborativas.</p>
+                    </div>
+                    <div class="feature-card fade-in">
+                        <div class="feature-icon">🛠️</div>
+                        <h3>4. Prototipar</h3>
+                        <p>Diseñamos el primer modelo del juego con cartas físicas, definiendo dinámicas, reglas y mecánicas de juego.</p>
+                    </div>
+                    <div class="feature-card fade-in">
+                        <div class="feature-icon">🧪</div>
+                        <h3>5. Evaluar</h3>
+                        <p>Probamos el juego con grupos reducidos, recopilamos feedback y realizamos iteraciones para mejorar la experiencia.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="container">
+                <h2 class="section-title fade-in">Cronograma de Desarrollo</h2>
+                <div class="timeline">
+                    <div class="timeline-item fade-in">
+                        <div class="timeline-content">
+                            <div class="timeline-week">Semana 1</div>
+                            <h4>Investigación y Recopilación</h4>
+                            <p>Análisis de literatura sobre bienestar mental estudiantil, técnicas de gamificación y metodologías de relajación grupal.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item fade-in">
+                        <div class="timeline-content">
+                            <div class="timeline-week">Semana 2</div>
+                            <h4>Ideación y Selección</h4>
+                            <p>Lluvia de ideas, análisis de alternativas y selección de la propuesta del juego de cartas como solución óptima.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item fade-in">
+                        <div class="timeline-content">
+                            <div class="timeline-week">Semanas 3-4</div>
+                            <h4>Diseño y Prototipado</h4>
+                            <p>Creación del primer prototipo, diseño de cartas, definición de reglas y mecánicas de juego cooperativo.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item fade-in">
+                        <div class="timeline-content">
+                            <div class="timeline-week">Semana 5</div>
+                            <h4>Pruebas Piloto</h4>
+                            <p>Aplicación del juego en distintos grupos de estudiantes universitarios para validar efectividad y usabilidad.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item fade-in">
+                        <div class="timeline-content">
+                            <div class="timeline-week">Semana 6</div>
+                            <h4>Evaluación y Mejoras</h4>
+                            <p>Análisis de resultados, encuestas de satisfacción, implementación de mejoras basadas en feedback recibido.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item fade-in">
+                        <div class="timeline-content">
+                            <div class="timeline-week">Semana 7</div>
+                            <h4>Presentación Final</h4>
+                            <p>Documentación completa del proyecto, presentación de resultados y propuesta de implementación institucional.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="container">
+                <h2 class="section-title fade-in">Principios Éticos y Valores</h2>
+                <div class="info-grid">
+                    <div class="info-card fade-in">
+                        <h3>🤝 Respeto y Empatía</h3>
+                        <p>Cada carta del juego promueve el respeto mutuo y la comprensión empática, creando espacios seguros para la expresión emocional.</p>
+                    </div>
+                    <div class="info-card fade-in">
+                        <h3>🌈 Inclusión Total</h3>
+                        <p>El juego utiliza lenguaje inclusivo y considera la diversidad cultural, de género y neurodiversidad en todas sus dinámicas.</p>
+                    </div>
+                    <div class="info-card fade-in">
+                        <h3>💚 Bienestar Positivo</h3>
+                        <p>Todas las dinámicas evitan temas sensibles o negativos, enfocándose exclusivamente en el crecimiento y bienestar personal.</p>
+                    </div>
+                    <div class="info-card fade-in">
+                        <h3>📝 Transparencia</h3>
+                        <p>El proceso completo se documenta con evidencias claras y honestas, permitiendo replicabilidad y mejora continua.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Página de Resultados -->
+    <div id="resultados" class="page-section">
+        <section class="content-section" style="padding-top: 120px;">
+            <div class="container">
+                <h1 class="section-title fade-in">Resultados y Evaluación</h1>
+                <p class="section-subtitle fade-in">Impacto real en el bienestar estudiantil</p>
+                
+                <div class="stats-grid">
+                    <div class="stat-card fade-in">
+                        <span class="stat-number">85%</span>
+                        <span class="stat-label">Estudiantes reportaron mayor tranquilidad</span>
+                    </div>
+                    <div class="stat-card fade-in">
+                        <span class="stat-number">92%</span>
+                        <span class="stat-label">Calificó la experiencia como positiva</span>
+                    </div>
+                    <div class="stat-card fade-in">
+                        <span class="stat-number">78%</span>
+                        <span class="stat-label">Mejoró su estado de ánimo post-juego</span>
+                    </div>
+                    <div class="stat-card fade-in">
+                        <span class="stat-number">3</span>
+                        <span class="stat-label">Contextos diferentes validados exitosamente</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="container">
+                <h2 class="section-title fade-in">Logros Alcanzados</h2>
+                <div class="info-grid">
+                    <div class="info-card fade-in">
+                        <h3>✅ Funcionalidad Comprobada</h3>
+                        <p>Se logró crear un juego completamente funcional y accesible que cumple con todos los objetivos planteados inicialmente.</p>
+                    </div>
+                    <div class="info-card fade-in">
+                        <h3>👍 Excelente Recepción</h3>
+                        <p>Los estudiantes participantes mostraron una respuesta muy positiva, solicitando más sesiones y recomendando el juego a otros.</p>
+                    </div>
+                    <div class="info-card fade-in">
+                        <h3>⚡ Herramienta de Pausa Activa</h3>
+                        <p>Se validó su efectividad como herramienta de pausa activa, perfecta para momentos de alto estrés académico.</p>
+                    </div>
+                    <div class="info-card fade-in">
+                        <h3>😌 Impacto Emocional Positivo</h3>
+                        <p>Los participantes manifestaron sentirse más tranquilos y con mejor ánimo después de las sesiones de juego.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="container">
+                <h2 class="section-title fade-in">Indicadores de Éxito</h2>
+                <div class="two-column">
+                    <div class="content-text fade-in">
+                        <h3>📊 Métricas Cuantitativas</h3>
+                        <p><strong>Participación Activa:</strong> 95% de los estudiantes se involucraron completamente en las dinámicas propuestas.</p>
+                        <p><strong>Reducción de Estrés:</strong> 80% reportó una disminución notable en los signales de estrés después del juego.</p>
+                        <p><strong>Satisfacción General:</strong> Promedio de 4.6/5 en escalas de satisfacción post-actividad.</p>
+                        
+                        <h3>💭 Feedback Cualitativo</h3>
+                        <p>Los comentarios recibidos destacan la facilidad de uso, la efectividad de las técnicas de relajación y el ambiente de confianza generado.</p>
+                    </div>
+                    <div class="fade-in">
+                        <div class="info-card">
+                            <h3>🎯 Metas Cumplidas</h3>
+                            <ul>
+                                <li>✓ Más del 80% se sintió más relajado</li>
+                                <li>✓ Aplicación exitosa en 3+ contextos</li>
+                                <li>✓ Validación como herramienta de autocuidado</li>
+                                <li>✓ Creación de vínculos empáticos</li>
+                                <li>✓ Fomento del diálogo emocional</li>
+                            </ul>
+                        </div>
+                        <div class="info-card">
+                            <h3>🔄 Contextos Validados</h3>
+                            <ul>
+                                <li>Aulas universitarias durante recesos</li>
+                                <li>Espacios de estudio grupal</li>
+                                <li>Sesiones de orientación estudiantil</li>
+                                <li>Talleres de bienestar institucional</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="container">
+                <h2 class="section-title fade-in">Reflexiones y Conclusiones</h2>
+                <div class="content-text fade-in" style="text-align: center; max-width: 800px; margin: 0 auto;">
+                    <p style="font-size: 1.2rem; line-height: 1.8; margin-bottom: 2rem;">
+                        Este proyecto nos permitió comprender profundamente la importancia del bienestar mental en el entorno universitario. Usando herramientas creativas y el enfoque del Design Thinking, logramos crear una solución práctica con impacto real y medible.
+                    </p>
+                    <p style="font-size: 1.1rem; line-height: 1.7; margin-bottom: 2rem;">
+                        Aprendimos que las pequeñas acciones pueden generar grandes cambios en el bienestar de las personas, y que la empatía es fundamental para cualquier proceso de mejora humana. Katharsis demostró ser más que un juego: es una herramienta de transformación social y emocional.
+                    </p>
+                    <div class="info-card" style="text-align: left;">
+                        <h3>🔮 Proyección Futura</h3>
+                        <p>Los resultados obtenidos abren múltiples posibilidades de expansión e implementación institucional. El juego tiene potencial para convertirse en una herramienta estándar en programas de bienestar estudiantil a nivel nacional.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Página del Equipo -->
+    <div id="equipo" class="page-section">
+        <section class="content-section" style="padding-top: 120px;">
+            <div class="container">
+                <h1 class="section-title fade-in">Nuestro Equipo</h1>
+                <p class="section-subtitle fade-in">Los creadores de Katharsis</p>
+                
+                <div class="team-grid">
+                    <div class="team-card fade-in">
+                        <div class="team-avatar">👩‍🎓</div>
+                        <h3>Auri González</h3>
+                        <p style="color: var(--verde-oscuro); font-weight: 500;">Especialista en Bienestar Estudiantil</p>
+                        <p>Experta en psicología educativa y desarrollo de herramientas para el manejo del estrés académico. Lideró la investigación sobre necesidades estudiantiles.</p>
+                    </div>
+                    <div class="team-card fade-in">
+                        <div class="team-avatar">👨‍💻</div>
+                        <h3>Diego Delgado</h3>
+                        <p style="color: var(--verde-oscuro); font-weight: 500;">Diseñador de Experiencias</p>
+                        <p>Especializado en Design Thinking y gamificación. Responsable del diseño de mecánicas de juego y experiencia de usuario.</p>
+                    </div>
+                    <div class="team-card fade-in">
+                        <div class="team-avatar">👨‍🔬</div>
+                        <h3>Jonathan Gutiérrez</h3>
+                        <p style="color: var(--verde-oscuro); font-weight: 500;">Investigador y Metodólogo</p>
+                        <p>Experto en metodologías de investigación y análisis de datos. Coordinó las pruebas piloto y evaluación de resultados.</p>
+                    </div>
+                    <div class="team-card fade-in">
+                        <div class="team-avatar">👨‍🎨</div>
+                        <h3>José Eduardo</h3>
+                        <p style="color: var(--verde-oscuro); font-weight: 500;">Desarrollador de Contenido</p>
+                        <p>Especialista en técnicas terapéuticas y mindfulness. Creó el contenido de las cartas y las dinámicas de relajación.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="container">
+                <h2 class="section-title fade-in">Nuestro Enfoque Colaborativo</h2>
+                <div class="two-column">
+                    <div class="content-text fade-in">
+                        <h3>🤝 Trabajo en Equipo</h3>
+                        <p>Nuestro equipo combinó conocimientos multidisciplinarios para crear una solución integral. Cada miembro aportó su experiencia única, desde psicología educativa hasta diseño de experiencias.</p>
+                        
+                        <h3>🎯 Visión Compartida</h3>
+                        <p>Compartimos la convicción de que el bienestar mental estudiantil es fundamental para el éxito académico y personal. Esta visión unificada nos permitió mantener coherencia en todo el desarrollo del proyecto.</p>
+                        
+                        <h3>💡 Innovación Constante</h3>
+                        <p>Aplicamos metodologías creativas y mantuvimos una mentalidad de mejora continua, siempre abiertos al feedback y dispuestos a iterar sobre nuestras ideas.</p>
+                    </div>
+                    <div class="fade-in">
+                        <div class="info-card">
+                            <h3>🏆 Fortalezas del Equipo</h3>
+                            <ul>
+                                <li>Experiencia multidisciplinaria</li>
+                                <li>Enfoque centrado en el usuario</li>
+                                <li>Metodología de trabajo ágil</li>
+                                <li>Compromiso con la calidad</li>
+                                <li>Visión de impacto social</li>
+                            </ul>
+                        </div>
+                        <div class="info-card">
+                            <h3>🎓 Formación Académica</h3>
+                            <ul>
+                                <li>Psicología Educativa</li>
+                                <li>Diseño y Experiencia de Usuario</li>
+                                <li>Metodología de la Investigación</li>
+                                <li>Terapias Alternativas y Mindfulness</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="container">
+                <h2 class="section-title fade-in">Reconocimientos y Logros</h2>
+                <div class="features-grid">
+                    <div class="feature-card fade-in">
+                        <div class="feature-icon">🏅</div>
+                        <h3>Proyecto Destacado</h3>
+                        <p>Reconocido como proyecto innovador en bienestar estudiantil por su enfoque práctico y resultados medibles.</p>
+                    </div>
+                    <div class="feature-card fade-in">
+                        <div class="feature-icon">🌟</div>
+                        <h3>Impacto Social</h3>
+                        <p>Validado por instituciones educativas como herramienta efectiva para programas de bienestar mental.</p>
+                    </div>
+                    <div class="feature-card fade-in">
+                        <div class="feature-icon">📚</div>
+                        <h3>Contribución Académica</h3>
+                        <p>Documentación completa disponible para replicación en otras instituciones educativas.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Página de Contacto -->
+    <div id="contacto" class="page-section">
+        <section class="content-section" style="padding-top: 120px;">
+            <div class="container">
+                <h1 class="section-title fade-in">Contacto</h1>
+                <p class="section-subtitle fade-in">¿Interesado en implementar Katharsis?</p>
+                
+                <div class="two-column">
+                    <div class="content-text fade-in">
+                        <h3>💬 ¿Cómo podemos ayudarte?</h3>
+                        <p>Si eres educador, psicólogo, coordinador de bienestar estudiantil o simplemente alguien interesado en herramientas de gestión emocional, nos encantaría conocer tu caso y explorar cómo Katharsis puede adaptarse a tus necesidades.</p>
+                        
+                        <h3>🎯 Servicios Disponibles</h3>
+                        <p>Ofrecemos capacitación para facilitadores, adaptación del juego a contextos específicos, y acompañamiento en la implementación de programas de bienestar basados en Katharsis.</p>
+                        
+                        <h3>🌍 Colaboraciones</h3>
+                        <p>Estamos abiertos a colaboraciones con instituciones educativas, organizaciones de salud mental y proyectos de investigación en bienestar estudiantil.</p>
+                    </div>
+                    <div class="fade-in">
+                        <div class="info-card">
+                            <h3>📧 Información de Contacto</h3>
+                            <p><strong>Email Principal:</strong><br>katharsis.bienestar@gmail.com</p>
+                            <p><strong>Teléfono:</strong><br>+52 (777) 123-4567</p>
+                            <p><strong>Ubicación:</strong><br>Cuernavaca, Morelos, México</p>
+                        </div>
+                        <div class="info-card">
+                            <h3>⏰ Horarios de Atención</h3>
+                            <p><strong>Lunes a Viernes:</strong><br>9:00 AM - 6:00 PM</p>
+                            <p><strong>Sábados:</strong><br>10:00 AM - 2:00 PM</p>
+                            <p><strong>Respuesta por email:</strong><br>Dentro de 24 horas</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="container">
+                <h2 class="section-title fade-in">Opciones de Colaboración</h2>
+                <div class="features-grid">
+                    <div class="feature-card fade-in">
+                        <div class="feature-icon">🏫</div>
+                        <h3>Instituciones Educativas</h3>
+                        <p>Implementación de Katharsis en programas de bienestar estudiantil, orientación escolar y desarrollo humano.</p>
+                    </div>
+                    <div class="feature-card fade-in">
+                        <div class="feature-icon">🏥</div>
+                        <h3>Centros de Salud Mental</h3>
+                        <p>Adaptación del juego para terapia grupal, talleres de manejo del estrés y programas de prevención.</p>
+                    </div>
+                    <div class="feature-card fade-in">
+                        <div class="feature-icon">💼</div>
+                        <h3>Empresas y Organizaciones</h3>
+                        <p>Versiones corporativas para programas de wellness laboral, team building y manejo del estrés organizacional.</p>
+                    </div>
+                    <div class="feature-card fade-in">
+                        <div class="feature-icon">🔬</div>
+                        <h3>Proyectos de Investigación</h3>
+                        <p>Colaboración en estudios sobre gamificación en salud mental, efectividad de intervenciones grupales y bienestar estudiantil.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="container">
+                <div class="fade-in" style="text-align: center;">
+                    <h2 class="section-title">¿Listo para transformar el bienestar en tu comunidad?</h2>
+                    <p style="font-size: 1.2rem; margin-bottom: 2rem; color: var(--verde-oscuro);">
+                        Contáctanos hoy y descubre cómo Katharsis puede hacer la diferencia
+                    </p>
+                    <a href="HTML/contactForm.html" class="cta-button">Enviar Mensaje</a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Katharsis</h4>
+                    <p>Kit Emocional de Emergencia para el bienestar mental estudiantil.</p>
+                    <p>Desarrollado con ❤️ en Cuernavaca, Morelos.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Contacto</h4>
+                    <a href="mailto:katharsis.bienestar@gmail.com">katharsis.bienestar@gmail.com</a>
+                    <p>+52 (777) 123-4567</p>
+                    <p>Cuernavaca, Morelos, México</p>
+                </div>
+                <div class="footer-section">
+                    <h4>El Equipo</h4>
+                    <p>Auri González</p>
+                    <p>Diego Delgado</p>
+                    <p>Jonathan Gutiérrez</p>
+                    <p>José Eduardo</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Recursos</h4>
+                    <a href="#" onclick="showPage('proyecto')">Documentación del Proyecto</a>
+                    <a href="#" onclick="showPage('metodologia')">Metodología</a>
+                    <a href="#" onclick="showPage('resultados')">Resultados</a>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 2rem; padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.2);">
+                <p>&copy; 2025 Katharsis - Todos los derechos reservados</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Navigation System
+        function showPage(pageId) {
+            // Ocultar todas las páginas
+            const pages = document.querySelectorAll('.page-section');
+            pages.forEach(page => {
+                page.classList.remove('active');
+            });
+            
+            // Mostrar la página seleccionada
+            const targetPage = document.getElementById(pageId);
+            if (targetPage) {
+                targetPage.classList.add('active');
+                window.scrollTo(0, 0);
+                
+                // Reiniciar animaciones
+                setTimeout(() => {
+                    const fadeElements = targetPage.querySelectorAll('.fade-in');
+                    fadeElements.forEach((el, index) => {
+                        el.classList.remove('visible');
+                        setTimeout(() => {
+                            el.classList.add('visible');
+                        }, index * 100);
+                    });
+                }, 100);
+            }
+        }
+
+        // Mobile Menu Toggle
+        function toggleMobileMenu() {
+            const mobileNav = document.getElementById('mobileNav');
+            mobileNav.classList.toggle('active');
+        }
+
+        // Animaciones al hacer scroll (solo para la página activa)
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        // Inicializar animaciones
+        function initializeAnimations() {
+            document.querySelectorAll('.fade-in').forEach(el => {
+                observer.observe(el);
+            });
+        }
+
+        // Inicializar cuando la página carga
+        document.addEventListener('DOMContentLoaded', function() {
+            initializeAnimations();
+            
+            // Mostrar animaciones iniciales
+            setTimeout(() => {
+                document.querySelectorAll('#inicio .fade-in').forEach((el, index) => {
+                    setTimeout(() => {
+                        el.classList.add('visible');
+                    }, index * 200);
+                });
+            }, 500);
+        });
+
+        // Efecto parallax sutil en el hero (solo si está visible)
+        window.addEventListener('scroll', () => {
+            const hero = document.querySelector('#inicio .hero');
+            const inicioPage = document.getElementById('inicio');
+            
+            if (hero && inicioPage.classList.contains('active')) {
+                const scrolled = window.pageYOffset;
+                hero.style.transform = `translateY(${scrolled * 0.3}px)`;
+            }
+        });
+
+        // Cerrar menú móvil al hacer clic fuera
+        document.addEventListener('click', function(event) {
+            const mobileNav = document.getElementById('mobileNav');
+            const mobileMenu = document.querySelector('.mobile-menu');
+            
+            if (!mobileNav.contains(event.target) && !mobileMenu.contains(event.target)) {
+                mobileNav.classList.remove('active');
+            }
+        });
+    </script>
+</body>
+</html>

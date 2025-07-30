@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/contact.css">
+    <link rel="shortcut icon" href="../ico.png" type="image/x-icon">
+    <title>Contacto - Katharsis</title>
+</head>
+<body>
+    <section class="form-container-section">
+    <!-- Formas de fondo -->
+    <div class="bg-shape"></div>
+    <div class="bg-shape"></div>
+    <div class="bg-shape"></div>
+    <div class="bg-shape"></div>
+
+    <!-- Elementos flotantes -->
+    <div class="floating-elements">
+        <div class="floating-icon">💚</div>
+        <div class="floating-icon">🧠</div>
+        <div class="floating-icon">✨</div>
+        <div class="floating-icon">🌟</div>
+        <div class="floating-icon">💫</div>
+    </div>
+
+    <div class="contact-container">
+        <!-- Sección del Formulario -->
+        <div class="form-section">
+            <h2>Hablemos</h2>
+            <p>¿Interesado en implementar Katharsis? Contáctanos directamente o llena el formulario y te responderemos pronto.</p>
+            
+            <div class="success-message" id="successMessage">
+                ¡Mensaje enviado exitosamente! Te contactaremos pronto.
+            </div>
+            
+            <div class="error-message" id="errorMessage">
+                Hubo un error al enviar el mensaje. Por favor, intenta nuevamente.
+            </div>
+
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="name">Tu Nombre</label>
+                    <input type="text" id="name" name="name" required placeholder="Ingresa tu nombre completo">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Tu Email</label>
+                    <input type="email" id="email" name="email" required placeholder="tu@email.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="organization">Organización (Opcional)</label>
+                    <input type="text" id="organization" name="organization" placeholder="Universidad, empresa, etc.">
+                </div>
+
+                <div class="form-group">
+                    <label for="interest">Tipo de Interés</label>
+                    <select id="interest" name="interest" style="width: 100%; padding: 15px 20px; border: 2px solid #e0e0e0; border-radius: 15px; font-size: 1rem; background: #f8f9fa; color: var(--azul-oscuro);">
+                        <option value="">Selecciona una opción</option>
+                        <option value="implementacion">Implementación Institucional</option>
+                        <option value="capacitacion">Capacitación para Facilitadores</option>
+                        <option value="investigacion">Colaboración en Investigación</option>
+                        <option value="terapeutico">Uso Terapéutico</option>
+                        <option value="corporativo">Aplicación Corporativa</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Tu Mensaje</label>
+                    <textarea id="message" name="message" required placeholder="Cuéntanos sobre tu proyecto o cómo podemos ayudarte..."></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">Enviar Mensaje</button>
+            </form>
+        </div>
+
+        <!-- Sección de Información -->
+        <div class="info-section">
+            <div class="illustration">
+                🎯
+            </div>
+            
+            <div class="contact-info">
+                <h3>Información de Contacto</h3>
+                
+                <div class="info-item">
+                    <i>📍</i>
+                    <span>Cuernavaca, Morelos, México</span>
+                </div>
+                
+                <div class="info-item">
+                    <i>📞</i>
+                    <span>+52 (777) 123-4567</span>
+                </div>
+                
+                <div class="info-item">
+                    <i>📧</i>
+                    <span>katharsis.bienestar@gmail.com</span>
+                </div>
+                
+                <div class="info-item">
+                    <i>⏰</i>
+                    <span>Lun-Vie: 9:00-18:00</span>
+                </div>
+            </div>
+
+            <div class="social-links">
+                <a href="#" class="social-link">📘</a>
+                <a href="#" class="social-link">🐦</a>
+                <a href="#" class="social-link">📷</a>
+                <a href="#" class="social-link">💼</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="../JS/contact.js"></script>
+    </section>
+</body>
+</html>
