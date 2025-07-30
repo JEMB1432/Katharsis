@@ -401,14 +401,19 @@
 
 /* Responsive */
 @media (max-width: 768px) {
+  .form-container-section{
+    padding: 40px 10px;
+  }
+
   .contact-container {
+    border-radius: 8px;
     grid-template-columns: 1fr;
     margin: 20px;
   }
 
   .form-section,
   .info-section {
-    padding: 40px 30px;
+    padding: 40px 20px;
   }
 
   .form-section h2 {
@@ -423,6 +428,10 @@
 
   .bg-shape {
     display: none;
+  }
+
+  .submit-btn{
+    width: 100%;
   }
 }
 
