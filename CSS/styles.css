@@ -235,6 +235,7 @@ nav {
   border-radius: 15px;
   box-shadow: 0 5px 20px rgba(0, 67, 70, 0.1);
   border-left: 5px solid var(--amarillo);
+  margin: 15px;
 }
 
 .info-card h3 {
