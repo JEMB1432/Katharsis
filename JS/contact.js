@@ -18,7 +18,7 @@
             // Simular envío del formulario
             setTimeout(() => {
                 // Aquí iría la lógica real de envío
-                const success = Math.random() > 0.1; // 90% de éxito para demo
+                const success = 1; // 90% de éxito para demo
                 
                 form.classList.remove('loading');
                 submitBtn.textContent = 'Enviar Mensaje';

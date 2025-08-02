@@ -19,7 +19,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 30px;
+  padding: 10px ;
   position: relative;
   overflow: hidden;
 }
@@ -182,21 +182,21 @@
 
 /* Sección del formulario */
 .form-section {
-  padding: 60px 50px;
+  padding: 15px 50px;
   position: relative;
 }
 
 .form-section h2 {
   font-size: 2.5rem;
   color: var(--azul-oscuro);
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   font-weight: 700;
 }
 
 .form-section p {
   color: var(--verde-oscuro);
   font-size: 1.1rem;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   line-height: 1.6;
   opacity: 0.8;
 }
@@ -217,7 +217,7 @@
 .form-group input,
 .form-group textarea {
   width: 100%;
-  padding: 15px 20px;
+  padding: 12px 20px;
   border: 2px solid #e0e0e0;
   border-radius: 15px;
   font-size: 1rem;
